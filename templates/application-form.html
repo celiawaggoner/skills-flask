@@ -1,12 +1,45 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Skills-Web</title>
-    <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
-    <!-- This page needs a form that can capture data about the user's
-    first name, last name, job title, and salary requirements. -->
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="instructions">
+            <h1>Job Application</h1>
+            <h3>Please submmit your information below:</h3>
+        </div>
+
+        <br>
+    
+        <form action="/application" method="POST">
+
+            <label for="field-firstname">First Name:</label>
+            <input type="text" name="firstname" id="field-firstname">
+
+            <br>
+
+            <label id="lastname" for="field-lastname">Last Name:</label>
+            <input type="text" name="lastname" id="field-lastname">
+
+            <br>
+
+            <label for="field-salary">Salary Requirement:</label>
+            <input type="text" name="salary" id="field-salary">
+
+            <br>
+
+            Job Title
+            <select name="jobtitle">
+                <option value="software engineer">Software Engineer</option>
+                <option value="qa engineer">QA Engineer</option>
+                <option value="product manager">Product Manager</option>
+            </select>
+
+            <br>
+
+            <input type="submit">
+        </form>
+    </body>
 </html>

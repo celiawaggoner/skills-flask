@@ -1,1 +1,13 @@
-/*Your styles can go here.*/
+/*your CSS goes here*/
+
+input {
+    background-color: yellow;
+}
+
+#lastname {
+    font-weight: bold;
+}
+
+#instructions {
+    border: 1px solid black;
+}
