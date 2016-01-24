@@ -1,11 +1,9 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Application Form</title>
-        <link rel="stylesheet" href="../static/styles.css">
-    </head>
-    <body>
+{% extends 'base.html' %}
+
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+
         <div id="instructions">
             <h1>Job Application</h1>
             <h3>Please submmit your information below:</h3>
@@ -41,5 +39,5 @@
 
             <input type="submit">
         </form>
-    </body>
-</html>
+
+    {% endblock %}
