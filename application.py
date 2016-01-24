@@ -2,13 +2,12 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-
+#local host home page
 @app.route("/")
 def index_page():
     """Show an index page."""
 
     return "<html><body>This is the homepage.</body></html>"
-
 
 #show the application form HTML on this page
 @app.route("/application-form")
